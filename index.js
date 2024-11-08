@@ -12,5 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.use(require("./routes/getRoutes"));
+app.use(require("./routes/deleteRoutes"));
+app.use(require("./routes/postRoutes"));
 
 app.listen(PORT, () => console.log(`Sever is running on port ${PORT}`));
